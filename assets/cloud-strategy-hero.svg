@@ -24,13 +24,13 @@
 <rect x="421" y="340" width="190" height="46" rx="12" fill="#152942" stroke="#2a4765"/>
 <text x="438" y="367" fill="#e5f2ff" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">3-YEAR MODEL</text>
 <rect x="853" y="81" width="359" height="287" rx="20" fill="#15263e" stroke="#3b5b7b" stroke-width="1.5"/>
-<rect x="876" y="104" width="149" height="27" rx="13.5" fill="#123d4a"/>
+<rect x="876" y="104" width="174" height="27" rx="13.5" fill="#123d4a"/>
 <circle cx="895" cy="117.5" r="5" fill="#51dfbf"/>
-<text x="908" y="122" fill="#a0f4dd" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" letter-spacing="1">RECOMMENDATION</text>
-<text x="876" y="182" fill="#f4f8ff" font-family="Arial,Helvetica,sans-serif" font-size="40" font-weight="800">Microsoft Azure</text>
-<text x="876" y="225" fill="#8cc8e9" font-family="Arial,Helvetica,sans-serif" font-size="21">Weighted evaluation</text>
+<text x="908" y="122" fill="#a0f4dd" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="700" letter-spacing="0.7">RECOMMENDATION</text>
+<text x="876" y="182" fill="#f4f8ff" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="800">Microsoft Azure</text>
+<text x="876" y="225" fill="#8cc8e9" font-family="Arial,Helvetica,sans-serif" font-size="19">Weighted evaluation</text>
 <text x="875" y="287" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="54" font-weight="800">3.90<tspan font-size="26" fill="#91a9c8"> / 5</tspan></text>
 <rect x="876" y="314" width="307" height="10" rx="5" fill="#314663"/>
 <rect x="876" y="314" width="239.5" height="10" rx="5" fill="url(#accent)"/>
-<text x="876" y="346" fill="#a8b9d3" font-family="Arial,Helvetica,sans-serif" font-size="13">Conditional: compatibility + recovery gates</text>
+<text x="876" y="346" fill="#a8b9d3" font-family="Arial,Helvetica,sans-serif" font-size="12.5">Conditional: compatibility + recovery gates</text>
 </svg>
