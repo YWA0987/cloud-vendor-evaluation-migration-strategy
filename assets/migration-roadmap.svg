@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="234" viewBox="0 0 1160 234" role="img" aria-labelledby="title desc">
+<title id="title">Gated cloud migration strategy</title>
+<desc id="desc">First validate applications and security, then pilot, stage and rehearse, cut over in month eight, leaving month nine as contingency.</desc>
+<rect x="0" y="0" width="1160" height="234" rx="18" fill="#101c33"/>
+<text x="35" y="41" fill="#f1f7ff" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="800">Migration plan: gated, not rushed</text>
+<g font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700">
+<rect x="36" y="74" width="207" height="82" rx="12" fill="#183b51" stroke="#3e7c95"/>
+<text x="53" y="102" fill="#8fe9db">MONTHS 1–2</text><text x="53" y="125" fill="#f4f9ff" font-size="17">Validate</text><text x="53" y="145" fill="#b0c4d8" font-size="13" font-weight="400">Applications + vendors</text>
+<path d="M246 116 h19 m-7 -7 l8 7 -8 7" stroke="#75a7c7" stroke-width="2" fill="none"/>
+<rect x="267" y="74" width="207" height="82" rx="12" fill="#193c56" stroke="#3a7a9e"/>
+<text x="284" y="102" fill="#8fe9db">MONTHS 3–4</text><text x="284" y="125" fill="#f4f9ff" font-size="17">Pilot</text><text x="284" y="145" fill="#b0c4d8" font-size="13" font-weight="400">Performance + recovery</text>
+<path d="M477 116 h19 m-7 -7 l8 7 -8 7" stroke="#75a7c7" stroke-width="2" fill="none"/>
+<rect x="498" y="74" width="207" height="82" rx="12" fill="#194457" stroke="#438d99"/>
+<text x="515" y="102" fill="#8fe9db">MONTHS 5–7</text><text x="515" y="125" fill="#f4f9ff" font-size="17">Stage + rehearse</text><text x="515" y="145" fill="#b0c4d8" font-size="13" font-weight="400">Data + rollback checks</text>
+<path d="M708 116 h19 m-7 -7 l8 7 -8 7" stroke="#75a7c7" stroke-width="2" fill="none"/>
+<rect x="729" y="74" width="190" height="82" rx="12" fill="#17534d" stroke="#35a98d"/>
+<text x="746" y="102" fill="#a0f5d6">MONTH 8</text><text x="746" y="125" fill="#f4f9ff" font-size="17">Cut over</text><text x="746" y="145" fill="#b0c4d8" font-size="13" font-weight="400">Only after approval</text>
+<path d="M922 116 h19 m-7 -7 l8 7 -8 7" stroke="#75a7c7" stroke-width="2" fill="none"/>
+<rect x="943" y="74" width="181" height="82" rx="12" fill="#39364f" stroke="#7d78a5"/>
+<text x="960" y="102" fill="#d7cbff">MONTH 9</text><text x="960" y="125" fill="#f4f9ff" font-size="17">Buffer</text><text x="960" y="145" fill="#b0c4d8" font-size="13" font-weight="400">Fallback if needed</text>
+</g>
+<text x="36" y="202" fill="#b4c7db" font-family="Arial,Helvetica,sans-serif" font-size="14">Illustrative phase breakdown based on the original report's staged migration and month-eight target.</text>
+</svg>

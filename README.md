@@ -1,71 +1,127 @@
-# Cloud Vendor Evaluation & Migration Strategy
+<p align="center">
+  <img src="assets/cloud-strategy-hero.svg" alt="Cloud Vendor Evaluation and Migration Strategy — an academic consulting case study" width="100%" />
+</p>
 
-**Academic Consulting Case Study | University at Buffalo — MGS 402 | October 2026**
+<p align="center">
+  <strong>Cloud strategy · Financial modeling · Security risk · Business continuity</strong><br/>
+  <sub>University at Buffalo · MGS 402 · October 2026 · Wafi Ahmed</sub>
+</p>
 
-**Project author:** Wafi Ahmed  
-**Recommendation:** Microsoft Azure, conditional on application compatibility, recovery testing, and the migration deadline.
+<p align="center">
+  <a href="#executive-recommendation">Recommendation</a> ·
+  <a href="#the-analysis">Analysis</a> ·
+  <a href="#risk--migration-plan">Risk and migration</a> ·
+  <a href="#explore-the-deliverables">Deliverables</a> ·
+  <a href="#assumptions--scope">Scope</a>
+</p>
 
-> **About this project:** Lakefront Retail is a **fictional company** in an academic case study. All prices are modeled estimates from October 2026—not actual contracts, guaranteed savings, or production deployment results.
+---
 
-## Executive decision
+> [!NOTE]
+> **Academic consulting simulation.** Lakefront Retail is a fictional company. Results are modeled using October 2026 assumptions and do not represent a live deployment, contracted pricing, or realized customer savings.
 
-Lakefront Retail is a 25-store regional retailer with approximately 600 employees, a six-person IT team, and a data-center lease ending in nine months. The goal was to identify a practical public-cloud migration path that balanced three-year spending with reliability, security, operational readiness, and the deadline.
+## The challenge
 
-I evaluated **Microsoft Azure, Amazon Web Services (AWS), and Google Cloud** using a weighted decision matrix and a three-year total-cost-of-ownership (TCO) model. **Azure ranked first with 3.90/5**, compared with Google Cloud's 3.16/5 and AWS's 2.97/5.
+A fictional regional retailer with **25 stores, roughly 600 employees, and a six-person IT team** must leave its on-premises data center in **nine months**. The business relies on accounting, inventory, shared file services, and reporting, while its IT staff have primarily Microsoft infrastructure experience.
 
-![Modeled three-year total cost comparison](assets/three-year-tco.svg)
+**Decision question:** Which public-cloud provider offers a financially realistic, technically defensible migration path without putting continuity or the lease deadline at risk?
 
-| Provider | Modeled 3-year TCO | Weighted score |
-|:--|--:|--:|
-| **Microsoft Azure** | **$243,741** | **3.90 / 5** |
-| Google Cloud | $333,382 | 3.16 / 5 |
-| AWS | $423,343 | 2.97 / 5 |
+## Executive recommendation
 
-Compared with the selected alternatives, Azure's modeled total was roughly **$89.6K below Google Cloud** and **$179.6K below AWS**. These are scenario differences, **not savings realized by a real company**; services were not identical in performance and recovery coverage.
+**Select Microsoft Azure for further validation—not immediate unconditional production migration.** In the submitted scenario model, Azure led on three-year TCO and alignment with the existing team's Microsoft expertise. The recommendation remains subject to application, security, storage, and recovery tests.
 
-## The business problem
+<p align="center">
+  <img src="assets/three-year-tco.svg" alt="Three-year TCO comparison: Azure $243,741; Google Cloud $333,382; AWS $423,343" width="100%" />
+</p>
 
-- A nine-month data-center lease exit creates schedule and business-continuity risk.
-- The IT team already knows Microsoft infrastructure but has limited public-cloud experience.
-- Inventory and accounting applications need compatibility testing before migration.
-- Store operations depend on reliable systems, data recovery, and clear security responsibilities.
-- The CFO needs realistic multi-year costs, not just an introductory monthly cloud price.
+| Evaluation | **Microsoft Azure** | Google Cloud | AWS |
+|:--|--:|--:|--:|
+| **Modeled three-year TCO** | **$243,741** | $333,382 | $423,343 |
+| **Weighted decision score** | **3.90 / 5** | 3.16 / 5 | 2.97 / 5 |
+| **Difference vs. Azure** | Baseline | +$89,641 | +$179,602 |
+| **Position in scenario** | **Preferred, with conditions** | Viable alternative | Viable alternative |
 
-## How I made the recommendation
+<sub>Modeled estimates include cloud operations, $31K migration/training allowance, and $62.4K internal staff time per option. Configurations differ in storage performance and backup/recovery coverage; the modeled differences are not verified savings.</sub>
 
-1. **Defined business requirements:** lease deadline, budget, reliability, security/PCI, team skills, and future lock-in.
-2. **Built a weighted decision matrix:** deadline (30%), cost (25%), reliability (15%), security (15%), team fit (10%), exit/lock-in (5%).
-3. **Modeled three-year TCO:** annual cloud service costs plus a $31K migration/training allowance and $62.4K in internal operations labor for each provider.
-4. **Evaluated SLA and recovery limitations:** examined database availability commitments, credits, outage exclusions, and the difference between backup frequency and RPO.
-5. **Proposed a gated migration:** validate application compatibility early, stage the transition, aim for a month-eight cutover, and preserve a one-month buffer.
+### Why Azure ranked first
 
-**Key finding:** Azure's Microsoft ecosystem fit and modeled price justified a conditional recommendation, **not unconditional production approval**. A failed application test, inadequate backup coverage, or an unworkable deadline would require reevaluation.
+| Decision driver | Weight | Reasoning |
+|:--|:--:|:--|
+| **Lease deadline feasibility** | **30%** | The data-center exit imposes a nine-month hard constraint. |
+| **Three-year economic cost** | **25%** | Multi-year operating and transition costs matter more than the introductory monthly bill. |
+| Reliability / SLA | 15% | Retail operations need a realistic continuity and recovery plan. |
+| Security / PCI responsibilities | 15% | Cloud adoption does not transfer all security or payment-data obligations. |
+| Team skills | 10% | Existing Microsoft experience reduces some transition friction, subject to testing. |
+| Exit / vendor lock-in | 5% | Future portability is important, but lower priority than the immediate deadline. |
 
-## Portfolio deliverables
+The decision matrix scored **3.90 for Azure, 3.16 for Google Cloud, and 2.97 for AWS**. Reliability, security, and exit considerations were conservatively tied where the available data did not prove a difference.
 
-| File | Purpose |
+**[Review the scoring method and assumptions →](docs/methodology.md)**
+
+## The analysis
+
+Rather than comparing providers on price alone, the project combined financial modeling, operational suitability, security responsibilities, and failure planning.
+
+| Workstream | What I evaluated |
 |:--|:--|
-| [Three-year cost model](data/three-year-tco.csv) | Structured operating costs, migration/training, and staff-time assumptions |
-| [Weighted decision matrix](data/decision-matrix.csv) | Criterion weights and provider scores |
-| [Methodology and model limits](docs/methodology.md) | Scoring formula, assumptions, and caveats |
-| [Migration plan](docs/migration-plan.md) | Recommended phases and go/no-go gates |
-| [Risk register](docs/risk-register.md) | Business and technical risks with mitigation actions |
-| [SLA and recovery analysis](docs/sla-and-recovery.md) | Service-credit scenario, recovery targets, and backup gaps |
-| [Full narrative case study](reports/case-study.md) | Recruiter-friendly write-up of the original report |
-| [Model verification script](scripts/verify_model.py) | Independently checks the published totals and weighted scores |
+| **Cloud economics** | Three-year modeled TCO, cost growth, transition allowances, internal staff time, and exit-cost exposure |
+| **Architecture fit** | Windows-based applications, SQL workloads, shared storage, identity, and operational readiness |
+| **Service commitments** | Database SLA, eligible credits, submission windows, and limits of financial compensation |
+| **Resilience** | RTO/RPO targets, backup cadence mismatch, recovery testing, and continuity planning |
+| **Risk management** | Legacy app compatibility, PCI scope, vendor lock-in, timing, and fallback strategies |
 
-> **Original submission:** A six-page PDF report with pricing-calculator appendix was submitted for MGS402 and approved by the professor for public portfolio use. The downloadable original PDF still needs to be added to the repository separately at reports/MGS402-Cloud-Vendor-Project.pdf.
+### An important financial distinction
+
+The cost ranking was based on the original report's **modeled operating/transition total**, and **excluded contingency and future exit allowances**. For Azure, the report separately outlined a **$217,609 funding allowance** (including an unexpected-expense reserve) and a potential **$39,420 post-year-three exit allowance**. Those figures serve different purposes and should not be added as though they were the same kind of TCO.
+
+**[Explore the financial model →](data/three-year-tco.csv)** · **[Review exit-cost assumptions →](docs/exit-costs.md)**
+
+## Risk & migration plan
+
+The most material risk is not cloud pricing: **legacy inventory or accounting software might require changes or fail during migration**. The recommended approach makes compatibility, security, and recovery validation prerequisites to committing.
+
+<p align="center">
+  <img src="assets/migration-roadmap.svg" alt="Proposed gated migration from validation in months one and two to cutover in month eight, leaving a month-nine buffer" width="100%" />
+</p>
+
+**Key technical judgment:** The proposed **4-hour RTO** and **1-hour RPO** require verification. A once-daily backup cannot satisfy a one-hour recovery point objective, so improved data protection and restore testing need to be budgeted.
+
+The report also explains why a cloud provider's **SLA service credit is not a substitute for business continuity**: a credit for eligible service charges does not reimburse a retailer for disruption or lost sales.
+
+[Review the risk register](docs/risk-register.md) · [Read the migration gates](docs/migration-plan.md) · [SLA and recovery analysis](docs/sla-and-recovery.md)
+
+## Explore the deliverables
+
+| Asset | What it contains |
+|:--|:--|
+| 📄 **[Full narrative case study](reports/case-study.md)** | Concise case background, decision process, modeled findings, and caveats |
+| 📊 **[Three-year TCO model](data/three-year-tco.csv)** | Cost assumptions and provider breakdowns |
+| 🧮 **[Decision matrix](data/decision-matrix.csv)** | Weighted evaluation inputs |
+| 🧭 **[Evaluation methodology](docs/methodology.md)** | Scoring rules, economic model, and limitations |
+| 🛠 **[Migration strategy](docs/migration-plan.md)** | Milestones, decision gates, operational handover |
+| 🛡 **[Risk register](docs/risk-register.md)** | Risks, mitigations, and accountable stakeholders |
+| 🔁 **[SLA & disaster recovery](docs/sla-and-recovery.md)** | Availability, credits, RTO/RPO, and backup gaps |
+| 🚪 **[Exit-cost analysis](docs/exit-costs.md)** | The separately modeled possible post-year-three exit expense |
+| 🧪 **[Model verification script](scripts/verify_model.py)** | Recomputes published scores and TCO totals |
+
+The repository also includes a custom graphical summary and migration timeline derived from the submitted report. The original PDF submission and single-slide presentation are separate supporting files, not required to understand the analysis here.
 
 ## Skills demonstrated
 
-Cloud vendor assessment · Microsoft Azure · AWS · Google Cloud · TCO modeling · Weighted decision matrices · SLA analysis · Disaster recovery planning · Risk assessment · Stakeholder communication · Technology consulting
+**Cloud strategy** · Azure / AWS / Google Cloud comparison · **TCO analysis** · Weighted decision matrices · **Risk and control assessment** · SLA interpretation · RTO/RPO analysis · Migration planning · Executive communication
 
-## Important limitations
+## Assumptions & scope
 
-- This is a **simulated academic client**, not paid client work or a live cloud deployment.
-- Prices reflect an **October 24, 2026 planning snapshot** and are not current quotes.
-- The compared configurations differ in storage performance, backups, and recovery coverage; direct like-for-like cost parity was **not established**.
-- Security and compliance were not independently audited; PCI scope and vendor-specific obligations require verification.
-- The verification script was created to make the published portfolio data reproducible; it was not presented as part of the original vendor analysis.
+- **Fictional client / academic assignment**, not consulting work delivered to a real company.
+- **October 2026 pricing snapshot**, not today's prices or guaranteed commercial quotes.
+- Compared configurations differ in backup, storage, and recovery performance; vendor costs were **not fully normalized**.
+- No live environment was migrated, penetration-tested, or independently audited.
+- PCI responsibilities and specific workload compatibility remain open validation items.
+- The included verification script was added for portfolio reproducibility and was **not a deliverable of the original report**.
 
-**University at Buffalo | MGS 402 Cloud & Network Infrastructure | October 2026**
+---
+
+<p align="center">
+  <sub>Prepared as an MGS 402 academic consulting project · University at Buffalo · October 2026</sub><br/>
+  <sub><strong>Recommendation quality means knowing what could change your recommendation.</strong></sub>
+</p>
