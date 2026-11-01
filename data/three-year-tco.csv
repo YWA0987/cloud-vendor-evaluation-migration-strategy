@@ -1,0 +1,4 @@
+provider,monthly_baseline_usd,year_1_usd,year_2_usd,year_3_usd,three_year_cloud_subtotal_usd,migration_training_usd,internal_operations_labor_usd,total_modeled_tco_usd
+Microsoft Azure,3993,47918,49976,52447,150341,31000,62400,243741
+AWS,8691,104293,109625,116024,329943,31000,62400,423343
+Google Cloud,6091,73093,79563,87326,239982,31000,62400,333382

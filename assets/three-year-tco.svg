@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 335" role="img" aria-labelledby="title desc">
+<title id="title">Three-year total cost of ownership comparison</title>
+<desc id="desc">Scenario estimates: Azure 243741 dollars, Google Cloud 333382 dollars, AWS 423343 dollars.</desc>
+<rect width="920" height="335" rx="18" fill="#101a2b"/>
+<text x="44" y="48" font-family="Arial,sans-serif" font-weight="700" font-size="24" fill="#f8fafc">Modeled three-year total cost</text>
+<text x="44" y="73" font-family="Arial,sans-serif" font-size="14" fill="#a3b1c4">Academic scenario · October 2026 pricing assumptions · USD</text>
+<g font-family="Arial,sans-serif" font-size="17" fill="#e2e8f0">
+<text x="44" y="125">Microsoft Azure</text>
+<text x="44" y="198">Google Cloud</text>
+<text x="44" y="271">AWS</text>
+</g>
+<g>
+<rect x="216" y="103" width="431" height="36" rx="7" fill="#182b43"/>
+<rect x="216" y="103" width="248" height="36" rx="7" fill="#13bca7"/>
+<rect x="216" y="176" width="431" height="36" rx="7" fill="#182b43"/>
+<rect x="216" y="176" width="339" height="36" rx="7" fill="#67a3ed"/>
+<rect x="216" y="249" width="431" height="36" rx="7" fill="#182b43"/>
+<rect x="216" y="249" width="431" height="36" rx="7" fill="#ac84e8"/>
+</g>
+<g font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#f8fafc">
+<text x="666" y="129">$243,741</text>
+<text x="666" y="202">$333,382</text>
+<text x="666" y="275">$423,343</text>
+</g>
+<text x="44" y="316" font-family="Arial,sans-serif" font-size="12" fill="#91a3b9">Not like-for-like configurations; estimates are not real contracts or realized savings.</text>
+</svg>

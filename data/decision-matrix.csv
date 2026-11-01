@@ -1,0 +1,7 @@
+criterion,weight,azure_score,aws_score,google_cloud_score
+Meet nine-month lease deadline,0.30,4.00,3.00,3.00
+Three-year cost,0.25,5.00,2.88,3.66
+Reliability and SLA protection,0.15,3.00,3.00,3.00
+Security and PCI responsibilities,0.15,3.00,3.00,3.00
+Team skills,0.10,4.00,3.00,3.00
+Exit costs and vendor lock-in,0.05,3.00,3.00,3.00
